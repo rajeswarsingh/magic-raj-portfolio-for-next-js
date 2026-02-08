@@ -5,9 +5,9 @@ const person: Person = {
   firstName: "Rajeswar",
   lastName: "Singh",
   name: `Rajeswar Singh`,
-  role: "Product Manager",
+  role: "Product & Project Manager",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
+  email: "rajeswar.kumar@gmail.com",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -76,7 +76,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Rajeswar, a Product and Project Manager at <Text as="span" size="xl" weight="strong"></Text>,  I craft intuitive <br /> user experiences. After hours, I build my own projects.
 </>
   ),
 };
@@ -113,9 +113,9 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
+        company: "Independent IT Consultant",
         timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        role: "Product Manager/Project Manager",
         achievements: [
           <>
             Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
@@ -137,9 +137,9 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
+        company: "Fabvery",
         timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        role: "Project Manager",
         achievements: [
           <>
             Developed a design system that unified the brand across multiple platforms, improving
@@ -159,7 +159,7 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of India",
+        name: "CUSAT",
         description: <>Studied software engineering.</>,
       },
       {
