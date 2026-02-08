@@ -9,7 +9,8 @@ const person: Person = {
   avatar: "/images/avatar.jpg",
   email: "rajeswar.kumar@gmail.com",
   location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English", "Hindi"], // optional: Leave the 
+  array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -175,7 +176,7 @@ const about: About = {
       {
         title: "Figma",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Able to prototype in Figma with Rajeswar with unnatural speed.</>
         ),
         tags: [
           {
@@ -202,7 +203,7 @@ const about: About = {
       {
         title: "Next.js",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Building next gen apps with Next.js + Rajeswar + Supabase.</>
         ),
         tags: [
           {
