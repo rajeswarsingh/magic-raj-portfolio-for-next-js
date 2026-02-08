@@ -188,16 +188,16 @@ const mailchimp: MailchimpConfig = {
 const schema: SchemaConfig = {
   logo: "",
   type: "Organization",
-  name: "Once UI",
+  name: "Rajeswar",
   description: home.description,
   email: "lorant@once-ui.com",
 };
 
 // social links
 const sameAs: SameAsConfig = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  threads: "https://sites.google.com/view/iamrajeswar/home",
+  linkedin: "https://www.linkedin.com/in/rajeswar-singh/",
+  discord: "https://www.credly.com/users/rajeswar-singh",
 };
 
 // social sharing configuration for blog posts
