@@ -60,7 +60,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building bridges between design and Delivery</>,
   featured: {
     display: true,
     title: (
@@ -76,7 +76,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Rajeswar, a Product and Project Manager at <Text as="span" size="xl" weight="strong"></Text>,  I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Rajeswar, a Product and Project Manager <Text as="span" size="xl" weight="strong"></Text>,  I craft intuitive <br /> Products. After hours, I build my own projects.
 </>
   ),
 };
