@@ -1,5 +1,5 @@
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
-import { Line, Row, Text } from "@once-ui-system/core";
+//import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Rajeswar",
@@ -61,13 +61,11 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and Delivery</>,
-  featured: {
+  headline: <>Building bridges between Tech, Design and Delivery</>,
+featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
@@ -75,6 +73,7 @@ const home: Home = {
     ),
     href: "/work/building-once-ui-a-customizable-design-system",
   },
+   
   subline: (
     <>
     I'm Rajeswar, a Product and Project Manager <Text as="span" size="xl" weight="strong"></Text>,  I craft intuitive <br /> Products. After hours, I build my own projects.
@@ -104,8 +103,24 @@ const about: About = {
     description: (
       <>
         Rajeswar is a India-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        into simple, elegant Product design solutions. His work spans digital Transformation, interactive
+        Web experiences and the convergence of solution design and technology.
+
+        
+        PMP, Agile, Executive Business Management from IIM Lucknow, Google Certified Data Analyst, NASSCOM Certified Data Scientist & ML with over 19+ years of experience in IT Solutions Design, Development, IT Operations / Application / Production Support, Testing, Integration, Telecom and E-commerce Business Application/Processes.
+        I help startups and growing businesses design, launch, and scale high-impact digital products by combining product strategy, execution excellence, digital marketing intelligence, and agentic AI automation.
+        With 19+ years of experience across financial systems, e-commerce, EdTech, and data-driven platforms, I turn complex ideas into reliable, revenue-generating, customer-centric products.
+      </>
+    ),
+  },
+  intro_2: {
+    display: true,
+    title: "Introduction",
+    description: (
+      <>
+        PMP, Agile, Executive Business Management from IIM Lucknow, Google Certified Data Analyst, NASSCOM Certified Data Scientist & ML with over 19+ years of experience in IT Solutions Design, Development, IT Operations / Application / Production Support, Testing, Integration, Telecom and E-commerce Business Application/Processes.
+        I help startups and growing businesses design, launch, and scale high-impact digital products by combining product strategy, execution excellence, digital marketing intelligence, and agentic AI automation.
+        With 19+ years of experience across financial systems, e-commerce, EdTech, and data-driven platforms, I turn complex ideas into reliable, revenue-generating, customer-centric products.
       </>
     ),
   },
