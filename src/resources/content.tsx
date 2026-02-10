@@ -104,8 +104,11 @@ const about: About = {
     description: (
       <>
         Rajeswar is a India-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        into simple, elegant design solutions. His work spans Digital Solutions, D2C digital Solutions, Product Design, and custom software.
+        
+        PMP, Agile, Executive Business Management from IIM Lucknow, Google Certified Data Analyst, NASSCOM Certified Data Scientist & ML with over 19+ years of experience in IT Solutions Design, Development, IT Operations / Application / Production Support, Testing, Integration, Telecom and E-commerce Business Application/Processes.
+        I help startups and growing businesses design, launch, and scale high-impact digital products by combining product strategy, execution excellence, digital marketing intelligence, and agentic AI automation.
+        With 19+ years of experience across financial systems, e-commerce, EdTech, and data-driven platforms, I turn complex ideas into reliable, revenue-generating, customer-centric products.
       </>
     ),
   },
