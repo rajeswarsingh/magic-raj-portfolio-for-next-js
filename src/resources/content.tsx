@@ -235,6 +235,7 @@ const about: About = {
           Delivered scalable platforms using low-code/no-code architectures Shopify, WordPress, reducing development timelines by 60% 
           while maintaining reliability, extensibility and production readiness.
           </>,  
+          <>
           Improved platform performance and availability, achieving 99.9% uptime and reducing page load times by 30%.
           </>,
           <>
@@ -318,7 +319,7 @@ const about: About = {
       {
         title: "Next.js",
         description: (
-          <>Building next gen apps with Next.js + Rajeswar + Supabase.</>
+          <>Building next gen apps with Next.js and React.js.</>
         ),
         tags: [
           {
