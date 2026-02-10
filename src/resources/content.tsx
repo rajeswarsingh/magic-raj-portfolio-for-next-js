@@ -61,7 +61,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and Delivery</>,
+  headline: <>Building bridges between Design and Delivery</>,
   featured: {
     display: true,
     title: (
@@ -77,7 +77,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Rajeswar, a Product and Project Manager <Text as="span" size="xl" weight="strong"></Text>,  I craft intuitive <br /> Products. After hours, I build my own projects.
+    I'm Rajeswar, a Product and Project Manager <Text as="span" size="xl" weight="strong"></Text>,  I craft intuitive <br /> Products and deliver scalable projects.
 </>
   ),
 };
@@ -120,7 +120,7 @@ const about: About = {
 
         {/* Opening statement */}
         <Text as="p" size="l" weight="strong" onBackground="neutral-strong">
-          India-based Product & Project Manager with 19+ years turning complex
+          India-based Product & Project Manager with 19+ years of experience turning complex
           ideas into reliable, revenue-generating digital products.
         </Text>
 
@@ -135,7 +135,9 @@ const about: About = {
               "Product strategy & execution excellence",
               "Digital marketing intelligence",
               "Agentic AI automation",
-              "D2C & custom software delivery",
+              "D2C Web Solutions",
+              "custom software delivery",
+              "Analytics Insights and Dashboard",
             ].map((item) => (
               <Row key={item} gap="12" vertical="center">
                 <Line background="brand-alpha-strong" vert height="16" />
@@ -160,7 +162,6 @@ const about: About = {
           </Text>
           <Row wrap gap="8">
             {[
-              "Financial Systems",
               "E-commerce",
               "EdTech",
               "Telecom",
@@ -185,8 +186,11 @@ const about: About = {
           </Text>
           <Row wrap gap="8">
             {[
-              "PMP",
-              "Agile",
+              "PMI-PMP® (Project Management Professional)",
+              "PMI Certified Product & Project Collaboration",
+              "Agile Product Management",
+              "Scrum",
+              "Product Management Certification – IIT Roorkee & HelloPM",
               "IIM Lucknow – Executive Business Management",
               "Google Certified Data Analyst",
               "NASSCOM – Data Science & ML",
@@ -209,8 +213,29 @@ const about: About = {
         role: "Product Manager/Project Manager",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Delivered 5+ D2C eCommerce platforms, managing end-to-end project execution to drive direct customer engagement 
+            while ensuring adherence to scope, timelines, and quality standards.
+            </>,
+          <>
+            Owned end-to-end product strategy and delivery for digital platforms, defining product scope, success metrics, 
+            roadmaps and execution plans aligned with business growth, customer experience and platform scalability.
+          </>,
+          <>
+          Led product discovery and requirements definition, translating business needs into prioritized backlogs, user stories 
+          and delivery roadmaps while balancing customer, operational and technical considerations.
+          </>,
+          <>
+          Contributing to a 20% increase in customer engagement and measurable improvements in adoption and usage.
+          </>,
+          <>
+          Drove Omni-Channel platform modernization and workflow optimization, improving operational efficiency and time-to-market 
+          by 30% through automation and process redesign.
+          </>,  
+          <>
+          Delivered scalable platforms using low-code/no-code architectures Shopify, WordPress, reducing development timelines by 60% 
+          while maintaining reliability, extensibility and production readiness.
+          </>,  
+          Improved platform performance and availability, achieving 99.9% uptime and reducing page load times by 30%.
           </>,
           <>
             Spearheaded the integration of AI tools into design workflows, enabling designers to
