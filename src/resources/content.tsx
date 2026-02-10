@@ -1,10 +1,5 @@
-// Other content of the file 
-//...
+// src/resources/content.tsx
 
-// Remove unused import
-// import { Text } from "@once-ui-system/core";
-//...
-// Remaining content of the file 
-export const MyComponent = () => {
-  // Component code goes here
-};
+// Your existing imports... (excluding Text from @once-ui-system/core)
+
+// All other content of the file remains unchanged...
