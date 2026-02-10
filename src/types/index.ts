@@ -1,45 +1,45 @@
-// TypeScript type definitions for various interfaces
+// TypeScript interfaces for the project structure
 
-export interface About {
-    title: string;
-    description: string;
-    image: string;
-}
-
-export interface Blog {
-    id: string;
-    title: string;
-    content: string;
-    date: Date;
-}
-
-export interface Gallery {
-    images: string[];
-}
-
-export interface Home {
-    welcomeMessage: string;
-    featuredProjects: string[];
-}
-
-export interface Newsletter {
-    email: string;
-    subscribeDate: Date;
-}
-
-export interface Person {
+interface Person {
     name: string;
-    age: number;
-    role: string;
+    age?: number;
+    pictureUrl?: string;
 }
 
-export interface Social {
+interface Social {
     platform: string;
     url: string;
 }
 
-export interface Work {
+interface Newsletter {
+    email: string;
+    subscribed: boolean;
+}
+
+interface Home {
+    welcomeMessage: string;
+    featuredProjects?: string[];
+}
+
+interface About {
+    bio: string;
+    skills?: string[];
+    experience?: string[];
+}
+
+interface Blog {
     title: string;
-    description: string;
-    tools: string[];
+    content: string;
+    tags?: string[];
+    publishedDate?: string;
+}
+
+interface Work {
+    title: string;
+    description?: string;
+    link?: string;
+}
+
+interface Gallery {
+    images: string[];
 }
