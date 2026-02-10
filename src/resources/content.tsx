@@ -98,7 +98,7 @@ const about: About = {
     display: true,
     link: "https://cal.com",
   },
-  intro: {
+ /* intro: {
     display: true,
     title: "Introduction",
     description: (
@@ -110,6 +110,93 @@ const about: About = {
         I help startups and growing businesses design, launch, and scale high-impact digital products by combining product strategy, execution excellence, digital marketing intelligence, and agentic AI automation.
         With 19+ years of experience across financial systems, e-commerce, EdTech, and data-driven platforms, I turn complex ideas into reliable, revenue-generating, customer-centric products.
       </>
+    ),
+  },*/
+  intro: {
+    display: true,
+    title: "Introduction",
+    description: (
+      <Column gap="32">
+
+        {/* Opening statement */}
+        <Text as="p" size="l" weight="strong" onBackground="neutral-strong">
+          India-based Product & Project Manager with 19+ years turning complex
+          ideas into reliable, revenue-generating digital products.
+        </Text>
+
+        {/* What I do */}
+        <Column gap="12">
+          <Text as="p" size="m" onBackground="neutral-medium">
+            I help startups and growing businesses design, launch, and scale
+            high-impact digital products by combining:
+          </Text>
+          <Column gap="8" paddingLeft="16">
+            {[
+              "Product strategy & execution excellence",
+              "Digital marketing intelligence",
+              "Agentic AI automation",
+              "D2C & custom software delivery",
+            ].map((item) => (
+              <Row key={item} gap="12" vertical="center">
+                <Line background="brand-alpha-strong" vert height="16" />
+                <Text size="m" onBackground="neutral-medium">{item}</Text>
+              </Row>
+            ))}
+          </Column>
+        </Column>
+
+        {/* Divider */}
+        <Line background="neutral-alpha-weak" />
+
+        {/* Domain expertise */}
+        <Column gap="12">
+          <Text
+            size="s"
+            weight="strong"
+            onBackground="neutral-weak"
+            style={{ textTransform: "uppercase", letterSpacing: "0.1em" }}
+          >
+            Domain Expertise
+          </Text>
+          <Row wrap gap="8">
+            {[
+              "Financial Systems",
+              "E-commerce",
+              "EdTech",
+              "Telecom",
+              "Data-driven Platforms",
+              "IT Operations",
+              "Production Support",
+            ].map((domain) => (
+              <Tag key={domain} label={domain} size="s" variant="neutral" />
+            ))}
+          </Row>
+        </Column>
+
+        {/* Credentials */}
+        <Column gap="12">
+          <Text
+            size="s"
+            weight="strong"
+            onBackground="neutral-weak"
+            style={{ textTransform: "uppercase", letterSpacing: "0.1em" }}
+          >
+            Credentials
+          </Text>
+          <Row wrap gap="8">
+            {[
+              "PMP",
+              "Agile",
+              "IIM Lucknow – Executive Business Management",
+              "Google Certified Data Analyst",
+              "NASSCOM – Data Science & ML",
+            ].map((cert) => (
+              <Tag key={cert} label={cert} size="s" variant="brand" />
+            ))}
+          </Row>
+        </Column>
+
+      </Column>
     ),
   },
   work: {
