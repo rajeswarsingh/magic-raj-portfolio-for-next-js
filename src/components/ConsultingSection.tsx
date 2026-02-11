@@ -1,5 +1,4 @@
-"use client";
-
+//"use client";
 import { Column, Row, Text, Tag, Line, Button, Heading, RevealFx } from "@once-ui-system/core";
 import { consulting } from "@/resources";
 
