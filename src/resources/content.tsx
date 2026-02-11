@@ -86,7 +86,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from Noida,India`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -257,36 +257,36 @@ const about: About = {
         company: "Fabvery",
         timeframe: "Oct 2019 – Oct 2022",
         role: "Project Manager",
-        achievements: [],
-        images: [],
+       // achievements: [],
+        //images: [],
       },
        {
         company: "Atos",
         timeframe: "May 2016 – July 2019",
         role: "Product Owner / System Designer",
-        achievements: [],
-        images: [],
+       // achievements: [],
+       // images: [],
       },
        {
         company: "TCS",
         timeframe: "Apr 2011 – July 2016",
         role: "Assistant Consultant",
-        achievements: [],
-        images: [],
+      //  achievements: [],
+        //images: [],
       },
        {
         company: "Arowana, Dubai",
         timeframe: "Sep 2008 – Mar 2011",
-        role: "Arowana, Dubai",
-        achievements: [],
-        images: [],
+        role: "System Analyst",
+        //achievements: [],
+        //images: [],
       },
        {
         company: "Verizon",
         timeframe: "June 2005 – Sep 2008",
         role: "Software Engineer",
-        achievements: [],
-        images: [],
+        //achievements: [],
+      //  images: [],
       },
     ],
   },
@@ -309,36 +309,9 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Rajeswar with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-         /* {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },*/
-        ],
-      },
-      {
         title: "Next.js",
         description: (
-          <>Building next gen apps with Next.js and React.js.</>
+          <>Building next-gen apps with Next.js and React.js.</>
         ),
         tags: [
           {
@@ -425,6 +398,33 @@ const about: About = {
         ],
         // optional: leave the array empty if you don't want to display images
         images: [],
+      },
+            {
+        title: "Figma",
+        description: (
+          <>Prototype in Figma</>
+        ),
+        tags: [
+          {
+            name: "Figma",
+            icon: "figma",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+         /* {
+            src: "/images/projects/project-01/cover-02.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/cover-03.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },*/
+        ],
       },
       
       
