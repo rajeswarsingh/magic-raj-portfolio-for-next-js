@@ -245,28 +245,47 @@ const about: About = {
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
+          /*{
             src: "/images/projects/project-01/cover-01.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
-          },
+          },*/
         ],
       },
       {
         company: "Fabvery",
-        timeframe: "2018 - 2022",
+        timeframe: "Oct 2019 – Oct 2022",
         role: "Project Manager",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
+        achievements: [],
+        images: [],
+      },
+       {
+        company: "Atos",
+        timeframe: "May 2016 – July 2019",
+        role: "Product Owner / System Designer",
+        achievements: [],
+        images: [],
+      },
+       {
+        company: "TCS",
+        timeframe: "Apr 2011 – July 2016",
+        role: "Assistant Consultant",
+        achievements: [],
+        images: [],
+      },
+       {
+        company: "Arowana, Dubai",
+        timeframe: "Sep 2008 – Mar 2011",
+        role: "Arowana, Dubai",
+        achievements: [],
+        images: [],
+      },
+       {
+        company: "Verizon",
+        timeframe: "June 2005 – Sep 2008",
+        role: "Software Engineer",
+        achievements: [],
         images: [],
       },
     ],
@@ -276,12 +295,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "CUSAT",
-        description: <>Studied software engineering.</>,
+        name: "Indian Institute of Management, Lucknow",
+        description: <>Executive Business Management</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "CUSAT",
+        description: <>Studied software engineering (MCA)</>,
       },
     ],
   },
@@ -302,7 +321,7 @@ const about: About = {
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
+         /* {
             src: "/images/projects/project-01/cover-02.jpg",
             alt: "Project image",
             width: 16,
@@ -313,7 +332,7 @@ const about: About = {
             alt: "Project image",
             width: 16,
             height: 9,
-          },
+          },*/
         ],
       },
       {
@@ -337,14 +356,78 @@ const about: About = {
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
+         /* {
             src: "/images/projects/project-01/cover-04.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
-          },
+          },*/
         ],
       },
+      
+      {
+        title: "Python",
+        description: (
+          <>Building Dashboard, Generating Analytics and DATA nsight with Python</>
+        ),
+        tags: [
+          {
+            name: "Pandas",
+            icon: "Pandas",
+          },
+          {
+            name: "NumPy",
+            icon: "NumPy",
+          },
+          {
+            name: "Matplotlib",
+            icon: "Matplotlib",
+          },
+          {
+            name: "Seaborn",
+            icon: "Seaborn",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+
+            {
+        title: "Other Technical Skills",
+        description: (
+          <>Building Custom Software Using Various Others Tech </>
+        ),
+        tags: [
+          {
+            name: "SQL",
+            icon: "SQL",
+          },
+          {
+            name: "Shell scripting",
+            icon: "Shell scripting",
+          },
+          {
+            name: "Tableau",
+            icon: "Tableau",
+          },
+          {
+            name: "CI/CD & DevOps",
+            icon: "CI/CD & DevOps",
+          },
+          {
+            name: "microservices",
+            icon: "microservices",
+          },
+          {
+            name: "AWS",
+            icon: "AWS",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      
+      
     ],
   },
 };
