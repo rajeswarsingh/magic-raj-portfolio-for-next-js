@@ -1,6 +1,6 @@
 "use client";
 import { Column, Row, Text, Tag, Line, Button, Heading, RevealFx } from "@once-ui-system/core";
-//import { consulting } from "@/resources";
+import type { MouseEvent } from "react";
 import { consulting } from "@/resources/content";
 
 export const ConsultingSection = () => {
