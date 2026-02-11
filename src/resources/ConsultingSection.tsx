@@ -1,8 +1,6 @@
 "use client";
-
 import { Column, Row, Text, Tag, Line, Button, Heading, RevealFx } from "@once-ui-system/core";
-import { consulting } from "@/resources/content.tsx";
-
+import { consulting } from "@/resources";
 
 export const ConsultingSection = () => {
   if (!consulting.display) return null;
@@ -92,11 +90,11 @@ export const ConsultingSection = () => {
                 style={{
                   transition: "all 0.3s ease",
                 }}
-                onMouseEnter={(e: any) => {
+                onMouseEnter={(e: React.MouseEvent<HTMLElement>) => {
                   e.currentTarget.style.transform = "translateY(-8px)";
                   e.currentTarget.style.boxShadow = "0 20px 60px var(--shadow-strong)";
                 }}
-                onMouseLeave={(e: any) => {
+                onMouseLeave={(e: React.MouseEvent<HTMLElement>) => {
                   e.currentTarget.style.transform = "translateY(0)";
                   e.currentTarget.style.boxShadow = "none";
                 }}
