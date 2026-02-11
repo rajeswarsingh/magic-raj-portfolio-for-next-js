@@ -1,6 +1,6 @@
 "use client";
 import { Column, Row, Text, Tag, Line, Button, Heading, RevealFx } from "@once-ui-system/core";
-import { consulting } from "@/resources";
+import { consulting } from "@/resources/content";
 
 export const ConsultingSection = () => {
   if (!consulting.display) return null;
