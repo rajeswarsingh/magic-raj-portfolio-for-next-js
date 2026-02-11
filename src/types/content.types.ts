@@ -1,4 +1,5 @@
 import { IconName } from "@/resources/icons";
+import type { ReactNode } from "react";
 import { zones } from "tzdata";
 
 /**
@@ -37,9 +38,9 @@ export type Newsletter = {
   /** Whether to display the newsletter section */
   display: boolean;
   /** Title of the newsletter   */
-  title: React.ReactNode;
+  title: ReactNode;
   /** Description of the newsletter */
-  description: React.ReactNode;
+  description: ReactNode;
 };
 
 /**
@@ -92,15 +93,15 @@ export interface Home extends BasePageConfig {
    */
   image: `/images/${string}` | string;
   /** The headline of the home page */
-  headline: React.ReactNode;
+  headline: ReactNode;
   /** Featured badge, which appears above the headline */
   featured: {
     display: boolean;
-    title: React.ReactNode;
+    title: ReactNode;
     href: string;
   };
   /** The sub text which appears below the headline */
-  subline: React.ReactNode;
+  subline: ReactNode;
 }
 
 /**
@@ -134,7 +135,7 @@ export interface About extends BasePageConfig {
     /** Title of the introduction section */
     title: string;
     /** Description of the introduction section */
-    description: React.ReactNode;
+    description: ReactNode;
   };
   /** Work experience section */
   work: {
@@ -151,7 +152,7 @@ export interface About extends BasePageConfig {
       /** Role or job title */
       role: string;
       /** Achievements at the company */
-      achievements: React.ReactNode[];
+      achievements: ReactNode[];
       /** Images related to the experience */
       images?: Array<{
         /** Image source path */
@@ -176,7 +177,7 @@ export interface About extends BasePageConfig {
       /** Institution name */
       name: string;
       /** Description of studies */
-      description: React.ReactNode;
+      description: ReactNode;
     }>;
   };
   /** Technical skills section */
@@ -190,7 +191,7 @@ export interface About extends BasePageConfig {
       /** Skill title */
       title: string;
       /** Skill description */
-      description?: React.ReactNode;
+      description?: ReactNode;
       /** Skill tags */
       tags?: Array<{
         name: string;
