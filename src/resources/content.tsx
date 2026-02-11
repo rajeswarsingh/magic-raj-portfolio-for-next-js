@@ -232,7 +232,7 @@ const about: About = {
           by 30% through automation and process redesign.
           </>,  
           <>
-          Delivered scalable platforms using low-code/no-code architectures Shopify, WordPress, reducing development timelines by 60% 
+          Delivered scalable platforms using low-code/no-code architectures Shopify and WordPress, reducing development timelines by 60% 
           while maintaining reliability, extensibility and production readiness.
           </>,  
           <>
@@ -257,36 +257,36 @@ const about: About = {
         company: "Fabvery",
         timeframe: "Oct 2019 – Oct 2022",
         role: "Project Manager",
-       // achievements: [],
-        //images: [],
+        achievements: [],
+        images: [],
       },
        {
         company: "Atos",
         timeframe: "May 2016 – July 2019",
         role: "Product Owner / System Designer",
-       // achievements: [],
-       // images: [],
+       achievements: [],
+       images: [],
       },
        {
         company: "TCS",
         timeframe: "Apr 2011 – July 2016",
         role: "Assistant Consultant",
-      //  achievements: [],
-        //images: [],
+        achievements: [],
+        images: [],
       },
        {
         company: "Arowana, Dubai",
         timeframe: "Sep 2008 – Mar 2011",
         role: "System Analyst",
-        //achievements: [],
-        //images: [],
+        achievements: [],
+        images: [],
       },
        {
         company: "Verizon",
         timeframe: "June 2005 – Sep 2008",
         role: "Software Engineer",
-        //achievements: [],
-      //  images: [],
+        achievements: [],
+        images: [],
       },
     ],
   },
