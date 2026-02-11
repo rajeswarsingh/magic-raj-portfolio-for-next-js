@@ -90,11 +90,11 @@ export const ConsultingSection = () => {
                 style={{
                   transition: "all 0.3s ease",
                 }}
-                onMouseEnter={(e: React.MouseEvent<HTMLElement>) => {
+                onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "translateY(-8px)";
                   e.currentTarget.style.boxShadow = "0 20px 60px var(--shadow-strong)";
                 }}
-                onMouseLeave={(e: React.MouseEvent<HTMLElement>) => {
+                onMouseLeave={(e) => {
                   e.currentTarget.style.transform = "translateY(0)";
                   e.currentTarget.style.boxShadow = "none";
                 }}
