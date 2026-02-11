@@ -8,9 +8,8 @@ const person: Person = {
   role: "Product & Project Manager",
   avatar: "/images/avatar.jpg",
   email: "rajeswar.kumar@gmail.com",
-  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Hindi"], // optional: Leave the 
-  //array empty if you don't want to display languages
+  location: "Asia/Kolkata",
+  languages: ["English", "Hindi"],
 };
 
 const newsletter: Newsletter = {
@@ -20,9 +19,6 @@ const newsletter: Newsletter = {
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
@@ -37,13 +33,13 @@ const social: Social = [
   },
   {
     name: "Credly",
-    icon: "Credly",
+    icon: "credly",
     link: "https://www.credly.com/users/rajeswar-singh",
     essential: true,
   },
   {
     name: "Portfolio",
-    icon: "Portfolio",
+    icon: "globe",
     link: "https://sites.google.com/view/iamrajeswar/home",
     essential: true,
   },
@@ -77,16 +73,113 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Rajeswar, a Product and Project Manager <Text as="span" size="xl" weight="strong"></Text>,  I craft intuitive <br /> Products and deliver scalable projects.
-</>
+      I'm Rajeswar, a Product and Project Manager. I craft intuitive <br />
+      products and deliver scalable projects.
+    </>
   ),
+};
+
+// NEW: Consulting Services Section
+const consulting = {
+  display: true,
+  title: "Product Consulting for High-Impact Digital Platforms",
+  subtitle: "Build Scalable, Reliable & Customer-Centric Products — Faster",
+  description: (
+    <>
+      I help startups and growing businesses design, launch, and scale digital products by combining
+      product thinking, technical depth, and execution excellence. With 19+ years of experience across
+      credit, billing, collections, e-commerce, and data-driven platforms, I partner with founders and
+      teams to turn ideas into reliable, high-impact products.
+    </>
+  ),
+
+  services: [
+    {
+      icon: "💡",
+      title: "Product Strategy & Discovery",
+      items: [
+        "Product vision, roadmap, and MVP definition",
+        "Requirements discovery & solution design",
+        "Feature prioritization aligned with business goals",
+        "Market, user, and workflow analysis",
+      ],
+    },
+    {
+      icon: "🚀",
+      title: "Product Delivery & Execution",
+      items: [
+        "Agile/Scrum delivery and backlog management",
+        "Cross-functional coordination (engineering, design, QA)",
+        "UAT, release readiness, and production rollout",
+        "Risk, dependency, and delivery management",
+      ],
+    },
+    {
+      icon: "⚙️",
+      title: "Platform & Workflow Design",
+      items: [
+        "Credit, billing, payment, and collections workflows",
+        "High-volume transaction systems",
+        "Customer onboarding & dispute resolution flows",
+        "Automation and operational efficiency improvements",
+      ],
+    },
+    {
+      icon: "🤖",
+      title: "AI & Automation Enablement",
+      items: [
+        "AI-powered chatbots for customer support & onboarding",
+        "Workflow automation to reduce manual effort",
+        "Data dashboards for actionable insights",
+      ],
+    },
+  ],
+
+  domains: [
+    { name: "EdTech Platforms", description: "Learning journeys, content access, user engagement" },
+    { name: "E-commerce Platforms", description: "Payments, checkout, integrations, analytics" },
+    { name: "Financial & Transaction Systems", description: "Credit, billing, revenue, collections" },
+    { name: "Conversational AI", description: "Chatbots for support, FAQs, and onboarding" },
+  ],
+
+  whyWorkWithMe: [
+    "19+ years of enterprise and startup experience",
+    "Strong product + technical + operations mindset",
+    "Proven ability to translate business needs into scalable solutions",
+    "Hands-on execution — not just strategy slides",
+    "Trusted by teams for clarity, ownership, and delivery",
+  ],
+
+  mentoring: {
+    display: true,
+    title: "Mentoring & Training",
+    items: [
+      "PMP exam training and structured learning sessions",
+      "Mentor teams on Agile, execution, and stakeholder alignment",
+    ],
+  },
+
+  cta: {
+    title: "Let's Work Together",
+    description: (
+      <>
+        If you're a startup founder building your first product, a growing business struggling
+        with delivery or scale, or a team needing product clarity, structure, or execution support
+        — I'd love to help.
+      </>
+    ),
+    buttons: [
+      { label: "Book a Consultation", link: "https://cal.com/rajeswar", primary: true },
+      { label: "Email Me", link: `mailto:${person.email}`, primary: false },
+    ],
+  },
 };
 
 const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from Noida,India`,
+  description: `Meet ${person.name}, ${person.role} based in India`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -96,35 +189,18 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/rajeswar",
   },
- /* intro: {
-    display: true,
-    title: "Introduction",
-    description: (
-      <>
-        Rajeswar is a India-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. His work spans Digital Solutions, D2C digital Solutions, Product Design, and custom software.
-        
-        PMP, Agile, Executive Business Management from IIM Lucknow, Google Certified Data Analyst, NASSCOM Certified Data Scientist & ML with over 19+ years of experience in IT Solutions Design, Development, IT Operations / Application / Production Support, Testing, Integration, Telecom and E-commerce Business Application/Processes.
-        I help startups and growing businesses design, launch, and scale high-impact digital products by combining product strategy, execution excellence, digital marketing intelligence, and agentic AI automation.
-        With 19+ years of experience across financial systems, e-commerce, EdTech, and data-driven platforms, I turn complex ideas into reliable, revenue-generating, customer-centric products.
-      </>
-    ),
-  },*/
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <Column gap="32">
-
-        {/* Opening statement */}
         <Text as="p" size="l" weight="strong" onBackground="neutral-strong">
           India-based Product & Project Manager with 19+ years of experience turning complex
           ideas into reliable, revenue-generating digital products.
         </Text>
 
-        {/* What I do */}
         <Column gap="12">
           <Text as="p" size="m" onBackground="neutral-medium">
             I help startups and growing businesses design, launch, and scale
@@ -136,7 +212,7 @@ const about: About = {
               "Digital marketing intelligence",
               "Agentic AI automation",
               "D2C Web Solutions",
-              "custom software delivery",
+              "Custom software delivery",
               "Analytics Insights and Dashboard",
             ].map((item) => (
               <Row key={item} gap="12" vertical="center">
@@ -147,10 +223,8 @@ const about: About = {
           </Column>
         </Column>
 
-        {/* Divider */}
         <Line background="neutral-alpha-weak" />
 
-        {/* Domain expertise */}
         <Column gap="12">
           <Text
             size="s"
@@ -174,7 +248,6 @@ const about: About = {
           </Row>
         </Column>
 
-        {/* Credentials */}
         <Column gap="12">
           <Text
             size="s"
@@ -199,12 +272,11 @@ const about: About = {
             ))}
           </Row>
         </Column>
-
       </Column>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
@@ -213,45 +285,36 @@ const about: About = {
         role: "Product Manager/Project Manager",
         achievements: [
           <>
-            Delivered 5+ D2C eCommerce platforms, managing end-to-end project execution to drive direct customer engagement 
+            Delivered 5+ D2C eCommerce platforms, managing end-to-end project execution to drive direct customer engagement
             while ensuring adherence to scope, timelines, and quality standards.
-            </>,
+          </>,
           <>
-            Owned end-to-end product strategy and delivery for digital platforms, defining product scope, success metrics, 
+            Owned end-to-end product strategy and delivery for digital platforms, defining product scope, success metrics,
             roadmaps and execution plans aligned with business growth, customer experience and platform scalability.
           </>,
           <>
-          Led product discovery and requirements definition, translating business needs into prioritized backlogs, user stories 
-          and delivery roadmaps while balancing customer, operational and technical considerations.
+            Led product discovery and requirements definition, translating business needs into prioritized backlogs, user stories
+            and delivery roadmaps while balancing customer, operational and technical considerations.
           </>,
           <>
-          Contributing to a 20% increase in customer engagement and measurable improvements in adoption and usage.
+            Contributing to a 20% increase in customer engagement and measurable improvements in adoption and usage.
           </>,
           <>
-          Drove Omni-Channel platform modernization and workflow optimization, improving operational efficiency and time-to-market 
-          by 30% through automation and process redesign.
-          </>,  
-          <>
-          Delivered scalable platforms using low-code/no-code architectures Shopify and WordPress, reducing development timelines by 60% 
-          while maintaining reliability, extensibility and production readiness.
-          </>,  
-          <>
-          Improved platform performance and availability, achieving 99.9% uptime and reducing page load times by 30%.
+            Drove Omni-Channel platform modernization and workflow optimization, improving operational efficiency and time-to-market
+            by 30% through automation and process redesign.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Delivered scalable platforms using low-code/no-code architectures Shopify and WordPress, reducing development timelines by 60%
+            while maintaining reliability, extensibility and production readiness.
+          </>,
+          <>
+            Improved platform performance and availability, achieving 99.9% uptime and reducing page load times by 30%.
+          </>,
+          <>
+            Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          /*{
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },*/
-        ],
+        images: [],
       },
       {
         company: "Fabvery",
@@ -260,28 +323,28 @@ const about: About = {
         achievements: [],
         images: [],
       },
-       {
+      {
         company: "Atos",
         timeframe: "May 2016 – July 2019",
         role: "Product Owner / System Designer",
-       achievements: [],
-       images: [],
+        achievements: [],
+        images: [],
       },
-       {
+      {
         company: "TCS",
         timeframe: "Apr 2011 – July 2016",
         role: "Assistant Consultant",
         achievements: [],
         images: [],
       },
-       {
+      {
         company: "Arowana, Dubai",
         timeframe: "Sep 2008 – Mar 2011",
         role: "System Analyst",
         achievements: [],
         images: [],
       },
-       {
+      {
         company: "Verizon",
         timeframe: "June 2005 – Sep 2008",
         role: "Software Engineer",
@@ -291,7 +354,7 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
@@ -305,129 +368,49 @@ const about: About = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
         title: "Next.js",
-        description: (
-          <>Building next-gen apps with Next.js and React.js.</>
-        ),
+        description: <>Building next-gen apps with Next.js and React.js.</>,
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "JavaScript", icon: "javascript" },
+          { name: "Next.js", icon: "nextjs" },
+          { name: "Supabase", icon: "supabase" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-         /* {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },*/
-        ],
+        images: [],
       },
-      
       {
         title: "Python",
-        description: (
-          <>Building Dashboard, Generating Analytics and DATA nsight with Python</>
-        ),
+        description: <>Building dashboards, generating analytics and data insights with Python</>,
         tags: [
-          {
-            name: "Pandas",
-            icon: "Pandas",
-          },
-          {
-            name: "NumPy",
-            icon: "NumPy",
-          },
-          {
-            name: "Matplotlib",
-            icon: "Matplotlib",
-          },
-          {
-            name: "Seaborn",
-            icon: "Seaborn",
-          },
+          { name: "Pandas", icon: "python" },
+          { name: "NumPy", icon: "python" },
+          { name: "Matplotlib", icon: "python" },
+          { name: "Seaborn", icon: "python" },
         ],
-        // optional: leave the array empty if you don't want to display images
         images: [],
       },
-
-            {
+      {
         title: "Other Technical Skills",
-        description: (
-          <>Building Custom Software Using Various Others Tech </>
-        ),
+        description: <>Building custom software using various technologies</>,
         tags: [
-          {
-            name: "SQL",
-            icon: "SQL",
-          },
-          {
-            name: "Shell scripting",
-            icon: "Shell scripting",
-          },
-          {
-            name: "Tableau",
-            icon: "Tableau",
-          },
-          {
-            name: "CI/CD & DevOps",
-            icon: "CI/CD & DevOps",
-          },
-          {
-            name: "microservices",
-            icon: "microservices",
-          },
-          {
-            name: "AWS",
-            icon: "AWS",
-          },
+          { name: "SQL", icon: "document" },
+          { name: "Shell", icon: "document" },
+          { name: "Tableau", icon: "document" },
+          { name: "CI/CD", icon: "rocket" },
+          { name: "Microservices", icon: "grid" },
+          { name: "AWS", icon: "globe" },
         ],
-        // optional: leave the array empty if you don't want to display images
         images: [],
       },
-            {
+      {
         title: "Figma",
-        description: (
-          <>Prototype in Figma</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-         /* {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },*/
-        ],
+        description: <>Prototype in Figma</>,
+        tags: [{ name: "Figma", icon: "figma" }],
+        images: [],
       },
-      
-      
     ],
   },
 };
@@ -437,8 +420,6 @@ const blog: Blog = {
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work: Work = {
@@ -446,8 +427,6 @@ const work: Work = {
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
 
 const gallery: Gallery = {
@@ -455,50 +434,16 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    { src: "/images/gallery/horizontal-1.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-4.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/horizontal-3.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-1.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/vertical-2.jpg", alt: "image", orientation: "vertical" },
+    { src: "/images/gallery/horizontal-2.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/horizontal-4.jpg", alt: "image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-3.jpg", alt: "image", orientation: "vertical" },
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work, gallery, consulting };
