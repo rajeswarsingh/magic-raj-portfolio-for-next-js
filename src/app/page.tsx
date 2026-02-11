@@ -15,6 +15,7 @@ import { home, about, person, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
+import { ConsultingSection } from "@/components/ConsultingSection";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -42,6 +43,8 @@ export default function Home() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
+      
+      {/* Hero Section */}
       <Column fillWidth horizontal="center" gap="m">
         <Column maxWidth="s" horizontal="center" align="center">
           {home.featured.display && (
@@ -100,9 +103,13 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Column>
+
+      {/* Featured Project */}
       <RevealFx translateY="16" delay={0.6}>
         <Projects range={[1, 1]} />
       </RevealFx>
+
+      {/* Blog Posts (if enabled) */}
       {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
           <Row fillWidth paddingRight="64">
@@ -123,7 +130,14 @@ export default function Home() {
           </Row>
         </Column>
       )}
+
+      {/* More Projects */}
       <Projects range={[2]} />
+
+      {/* NEW: Consulting Section - Added before Mailchimp */}
+      <ConsultingSection />
+
+      {/* Newsletter */}
       <Mailchimp />
     </Column>
   );
